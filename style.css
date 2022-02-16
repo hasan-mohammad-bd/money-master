@@ -1,15 +1,20 @@
 
 
-
-
+/* custom background */
 .main .background-image {
-    height: 600px;
+    height: 820px;
     background-image: url("./image/money.jpg");
     background-size: cover;
     background-position:center;
+
 }
 
 .main .text-section {
     background-color: rgb(243, 243, 243);
 }
 
+/* custom padding */
+
+.pe{
+    padding-right: 170px;
+}

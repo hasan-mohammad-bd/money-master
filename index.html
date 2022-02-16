@@ -15,38 +15,45 @@
     <div class="container">
         <header><h1 class="text-center py-4 fw-bolder">Pocket Money</h1></header>
         <main class="main">
-            <div class="row row-cols-1 row-cols-lg-2">
-                <div class="col background-image">
+            <div class="row row-cols-1 row-cols-lg-2 g-5">
+                <!-- image section -->
+                <div class="col">
+                    <div class="background-image"></div>
                 </div>
-                <div class="col ps-5 text-section text-center">
-                  <h4 class="my-4 fw-bolder">Income</h4>
+                
+                <!-- text section -->
+                <div class="col text-section text-end pe">
+                  <h5 class="mt-5 mb-4 fw-bold">Income</h5>
                     <div class="my-3">
-                        <h5 class="d-inline-block fw-bolder">Income</h5> 
+                        <h5 class="d-inline-block fw-normal">Income</h5> 
                         <input id="income-input" class="ms-3 border-0 w-50 p-2 px-4" type="text">
                     </div>
-                  <h4 class="fw-bolder my-4">Expenses</h4>
+                  <h5 class="my-4 fw-bold">Expenses</h5>
                   <div class="my-3 ">
-                    <h5 class="d-inline-block fw-bolder">Food</h5> 
+                    <h5 class="d-inline-block fw-normal">Food</h5> 
                     <input id="food-expense-input" class="ms-3 border-0 w-50 p-2 px-4" type="text">
                 </div>
                   <div class="my-3">
-                    <h5 class="d-inline-block fw-bolder">Rent</h5> 
+                    <h5 class="d-inline-block fw-normal">Rent</h5> 
                     <input id="rent-expense-input" class="ms-3 border-0 w-50 p-2 px-4" type="text">
                 </div>
                   <div class="my-3">
-                    <h5 class="d-inline-block fw-bolder">Clothes</h5> 
-                    <input id="colthes-expense-input" class="ms-3 border-0 w-50 p-2 px-4" type="text">
+                    <h5 class="d-inline-block fw-normal">Clothes</h5> 
+                    <input id="clothes-expense-input" class="ms-3 border-0 w-50 p-2 px-4" type="text">
                 </div>
-                <button id="cal-btn" class="btn py-2 px-4 btn-primary">Calculate</button>
-                <h4 class="fw-bolder my-4">Total Expenses: <span id="total-expense">00</span> TK</h4>
-                <h4 class="fw-bolder my-4">Total Balance: <span id="total-balance">00</span> TK</h4>
+                <button id="cal-btn" class="btn py-2 px-4 my-4 btn-primary">Calculate</button>
+                <h5 class="my-4 fw-bold">Total Expenses: <span id="total-expense">00</span> TK</h5>
+                <h5 class="fw-bold my-4">Total Balance: <span id="total-balance">00</span> TK</h5>
                 <div class="my-3">
-                    <h5 class="d-inline-block fw-bolder">Save</h5> 
-                    <input id="saving-input" class="ms-3 border-0 w-25 p-2 px-4" type="text">
-                    <h5 class="d-inline-block fw-bolder px-3">%</h5>
+                    <h5 class="d-inline-block fw-normal">Save</h5> 
+                    <input id="save-input" class="ms-3 border-0 w-25 p-2 px-4" type="text">
+                    <h5 class="d-inline-block fw-normal px-3">%</h5>
                     <button id="save-btn" class="btn py-2 px-4 btn-primary">Save</button>
+                    <h5 class="fw-bold my-4">Saving Amount: <span id="saiving-amount">00</span> TK</h5>
+                    <h5 class="fw-bold my-4">Remaining Balance: <span id="remaining-balance">00</span> TK</h5>
                 </div>
         </main>
+        <div class="py-5"></div>
     </div>
     <script src="script.js"></script>
 </body>
