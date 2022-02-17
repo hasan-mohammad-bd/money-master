@@ -24,16 +24,10 @@ function textField(textField, isAdd, inputValue, amount){
 }
 
 function calPercentage(inputValue, percentage){
-    let thePercentage = inputValue / percentage;
+    let thePercentage = (inputValue / 100)* percentage;
     return thePercentage;
 
 }
-
-
-
-
-
-
 
 
 
@@ -57,6 +51,8 @@ document.getElementById("save-btn").addEventListener("click", function(){
     let totalIncomeValue = parseFloat(totalIncome);
     let percentageInput = getInput("save-input");
     let calculatePercentage = calPercentage(totalIncomeValue, percentageInput);
-    console.log(calculatePercentage);
-    document.getElementById("saiving-amount").innerText = calculatePercentage;
+    document.getElementById("saving-amount").innerText = calculatePercentage;
+    let totalBalance = document.getElementById("total-balance").innerText;
+    let totalBalanceAfterSaving = totalBalance - calculatePercentage;
+    document.getElementById("remaining-balance").innerText = totalBalanceAfterSaving;
 })
