@@ -43,7 +43,7 @@ document.getElementById("cal-btn").addEventListener("click", function(){
             document.getElementById("alert-msg2").style.display = "none";
             let totalExpense = foodInput + rentInput + clothesInput;
             //error catching
-            if(totalExpense <= incomeInput){
+            if(totalExpense < incomeInput){
                 document.getElementById("alert-msg3").style.display = "none";
                 document.getElementById("total-expense").innerText = totalExpense;
                 let remainingBalance = textField("total-balance",incomeInput,totalExpense);
@@ -68,13 +68,13 @@ document.getElementById("save-btn").addEventListener("click", function(){
     let totalIncomeValue = parseFloat(totalIncome);
     let percentageInput = getInput("save-input");
     //error catching
-    if(percentageInput > 0){
+    if(percentageInput > 0 ){
         document.getElementById("alert-msg4").style.display = "none";
         let calculatePercentage = calPercentage(totalIncomeValue, percentageInput);
-        document.getElementById("saving-amount").innerText = calculatePercentage;
         let totalBalance = document.getElementById("total-balance").innerText;
         //error catching
-        if(calculatePercentage <= totalBalance) {
+        if(calculatePercentage < totalBalance) { 
+            document.getElementById("saving-amount").innerText = calculatePercentage;
             document.getElementById("alert-msg5").style.display = "none";
             let totalBalanceAfterSaving = totalBalance - calculatePercentage;
             document.getElementById("remaining-balance").innerText = totalBalanceAfterSaving;
