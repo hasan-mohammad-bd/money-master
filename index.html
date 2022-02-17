@@ -28,6 +28,7 @@
                     <div class="my-3">
                         <h5 class="d-inline-block fw-normal">Income</h5> 
                         <input id="income-input" class="ms-3 border-0 w-50 p-2 px-4" type="text">
+                        <p id="alert-msg1" class="text-danger">Please give valid input here</p>
                     </div>
                   <h5 class="my-4 fw-bold">Expenses</h5>
                   <div class="my-3 ">
@@ -41,16 +42,22 @@
                   <div class="my-3">
                     <h5 class="d-inline-block fw-normal">Clothes</h5> 
                     <input id="clothes-expense-input" class="ms-3 border-0 w-50 p-2 px-4" type="text">
+                    <p id="alert-msg2" class="text-danger">Please give valid expenses</p>                    
                  </div>
                  <button id="cal-btn" class="btn py-2 px-4 my-4 btn-primary">Calculate</button>
+                 <p id="alert-msg3" class="text-danger">You can not spend more than your income</p> 
                  <h5 class="my-4 fw-bold">Total Expenses: <span id="total-expense">00</span> TK</h5>
                  <h5 class="fw-bold my-4">Total Balance: <span id="total-balance">00</span> TK</h5>
                  <div class="my-3">
                     <h5 class="d-inline-block fw-normal">Save</h5> 
-                    <input id="save-input" class="ms-3 border-0 w-25 p-2 px-4" type="text">
+
+                    <input id="save-input" class="ms-3 border-0 w-25 p-2 px-4" type="text">                  
                     <h5 class="d-inline-block fw-normal px-3">%</h5>
                     <button id="save-btn" class="btn py-2 px-4 btn-primary">Save</button>
-                    <h5 class="fw-bold my-4">Saving Amount: <span id="saving-amount">00</span> TK</h5>
+                    <p id="alert-msg4" class="text-danger text-center">Please give valid input here</p>
+                    <p id="alert-msg5" class="text-danger text-center">There is no sufficient balance</p>
+                  
+                   <h5 class="fw-bold my-4">Saving Amount: <span id="saving-amount">00</span> TK</h5>
                     <h5 class="fw-bold my-4">Remaining Balance: <span id="remaining-balance">00</span> TK</h5>
                 </div>
         </main>
